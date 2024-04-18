@@ -64,7 +64,7 @@ async fn answer(bot: Bot, msg: Message, cmd: Command) -> ResponseResult<()> {
                 .bearer_auth(std::env::var("OPENAI_API_TOKEN").unwrap())
                 .header("OpenAI-Beta", "assistants=v2")
                 .json(&json!({
-                    "assistant_id": "asst_CUwDLhqfxGWY3JXMMwGMzjG5",
+                    "assistant_id": "asst_3LhEw2mryKG0V0wKsFPvhXv6",
                     "temperature": 0.6, // lower temperature -> less hallucinations
                 }))
                 .send()
