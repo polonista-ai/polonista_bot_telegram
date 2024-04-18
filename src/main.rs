@@ -65,7 +65,7 @@ async fn answer(bot: Bot, msg: Message, cmd: Command) -> ResponseResult<()> {
                 .header("OpenAI-Beta", "assistants=v2")
                 .json(&json!({
                     "assistant_id": "asst_3LhEw2mryKG0V0wKsFPvhXv6",
-                    "temperature": 0.6, // lower temperature -> less hallucinations
+                    "temperature": 0.0, // lower temperature -> less hallucinations
                 }))
                 .send()
                 .await
